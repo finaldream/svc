@@ -1,17 +1,17 @@
 {
   "name": "svc",
-  "version": "0.2.1",
-  "description": "Scalable Vector Converter - A small and simple SVG to inline CSS converter for node.js.",
+  "version": "0.2.2",
+  "description": "Scalable Vector Converter - A small SVG to inline CSS converter.",
   "main": "index.js",
   "bin": {
-    "svg2css": "index.js"
+    "svc": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/finaldream/svg2css.git"
+    "url": "git://github.com/finaldream/svc.git"
   },
   "keywords": [
     "SVG",

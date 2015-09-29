@@ -2,14 +2,14 @@
 
 'use strict';
 
-var Svg2CssApp = require('./lib/svg2css.js');
-var cli        = require('commander');
-var pJson      = require('./package.json');
+var SVCApp = require('./lib/svc.js');
+var cli    = require('commander');
+var pJson  = require('./package.json');
 
-process.title = 'svg2css';
+process.title = 'svc';
 
 var desc = [
-    'Svg2Css Utility, Version ' + pJson.version,
+    pJson.description + ', Version ' + pJson.version,
     '',
     'Takes a folder of SVG-files and translates them into a single CSS-file with inline background-images.',
     'The filenames will be used as CSS-selectors for the generated rules.'
@@ -28,5 +28,5 @@ if (!process.argv.slice(2).length) {
     return;
 }
 
-var app = new Svg2CssApp();
+var app = new SVCApp();
 app.init(cli);
