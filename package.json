@@ -1,6 +1,6 @@
 {
   "name": "svc",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Scalable Vector Converter - A small SVG to inline CSS converter.",
   "main": "index.js",
   "bin": {
@@ -24,6 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^2.8.1",
-    "libxmljs": "^0.14.3"
+    "xml2js": "^0.4.12",
+    "xml2js-xpath": "^0.4.4"
   }
 }
